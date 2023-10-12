@@ -25,20 +25,23 @@ body {
     box-sizing: border-box;
 }
 
-.container{
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
 }
- nav{
-    padding-left:60px;
-    
+
+.logo{
+    width: 62px;
+    height: 20px;
 }
-.choix nav{
+.choix {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    padding-left: 60px;
+    gap: 50px;
 }
+
 
 
 a {
