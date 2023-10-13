@@ -24,25 +24,73 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
-
+/*Include header*/
 header{
+    display: flex;
+    flex-direction: column;
+}
+
+.directionRow{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+}
+.mouse:hover{
+    text-decoration: overline;
+    color: #0065FC;
 }
 
 .logo{
     width: 62px;
     height: 20px;
+    margin: 30px 0 30px 0;
+    
 }
-.choix {
+.choice {
     display: flex;
     flex-direction: row;
-    padding-left: 60px;
-    gap: 50px;
+    padding: 0px 25px;
+    gap: 68px;
+}
+.directionColumn{
+    display: flex;
+    flex-direction: column;
+    
+}
+.directionColumn h2{
+    margin-bottom: 0;
+}
+.directionColumn p {
+    margin-top: 0;
 }
 
+form{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    gap:0;
+    
+}
+.search{
+   border: none;
+   text-align: center;
+   font-weight: bold;
+   font-size: 18px;
+}
+.submit{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+    font-weight:bold;
+    text-align: center;
+    font-size: 18px;
 
+}
+
+/*end transformation for his day*/
 
 a {
     color: inherit;
