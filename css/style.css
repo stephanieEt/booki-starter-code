@@ -24,7 +24,8 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
-/*Include header*/
+/*1 header*/
+/*1.1 logo et hébergements et activités*/
 header{
     display: flex;
     flex-direction: column;
@@ -53,6 +54,8 @@ header{
     padding: 0px 25px;
     gap: 68px;
 }
+/*1.2 h2 et paragraphe*/
+
 .directionColumn{
     display: flex;
     flex-direction: column;
@@ -64,20 +67,25 @@ header{
 .directionColumn p {
     margin-top: 0;
 }
-
+/*1.3 barre de recherche*/
 form{
     display: flex;
     width: 100%;
-    margin: 0;
+    margin: 18px 0px;
     gap:0;
     
 }
 .search{
-   border: none;
-   text-align: center;
-   font-weight: bold;
-   font-size: 18px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+ }
+
+.search::placeholder{
+    color: #000000;
 }
+
 .submit{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -87,10 +95,72 @@ form{
     font-weight:bold;
     text-align: center;
     font-size: 18px;
-
+    padding: 14px;
 }
 
-/*end transformation for his day*/
+/*1.4 filtres*/
+
+.filtered{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+}
+.filterItem{
+    padding:12px 25px;
+    border-radius: 25px;
+    border:2px solid #d9d9d9;
+    font-style: bold;
+    font-size: 17px;
+    align-self: center;
+    display: flex;
+    
+}
+.filter{
+    font-style: bold;
+    font-size: 18px; 
+    align-self: center;       
+}
+
+.icon{
+margin-right: 8px;
+}
+
+/*1.5 infos*/
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.infoItem{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    align-items: center;
+}
+   
+.infoItem img{
+max-width: 50%;
+max-height: 50%;
+margin-top: 6px;
+margin-left: 1filpx;
+}
+
+.infos p{
+    margin-top: 4px;
+}
+
+.filterItem:hover{
+    background-color: var(--filter-bg-color);
+}
+    
+
+
+
+
 
 a {
     color: inherit;
