@@ -106,13 +106,13 @@ form {
   padding: 12px 25px;
   border-radius: 25px;
   border: 2px solid #d9d9d9;
-  font-style: bold;
+  font-weight: bold;
   font-size: 17px;
   align-self: center;
   display: flex;
 }
 .filter {
-  font-style: bold;
+  font-weight: bold;
   font-size: 18px;
   align-self: center;
 }
@@ -142,7 +142,7 @@ form {
   max-width: 50%;
   max-height: 50%;
   margin-top: 6px;
-  margin-left: 1filpx;
+  margin-left: 1px;
 }
 
 .infos p {
