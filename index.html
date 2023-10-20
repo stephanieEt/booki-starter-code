@@ -33,7 +33,7 @@
                 <p>En plein centre-ville ou en pleine nature</p>
             </section>
             <form>
-                <i class="fa-solid fa-location-dot"></i>
+                <i id="maps" class="fa-solid fa-location-dot"></i>
                 <input type="text" name="lieu" class="search" placeholder="Marseille,France">
                 <button type="submit" class="submit" value="Rechercher">Rechercher</button>
                 <button type="submit" class="submitIcon" value="loupe">
@@ -43,12 +43,21 @@
                 <div class="filter">
                     <h3>Filtres</h3>
                 </div>
-                <div class="bouton">
-                    <h3 class="filterItem"><i class="fa-solid fa-money-bill-wave"></i>Économiques</h3>
-                    </h3>
-                    <h3 class="filterItem"><i class="fa-solid fa-person"></i></i>Familial</h3>
-                    <h3 class="filterItem"><i class="fa-solid fa-heart"></i>Romantique</h3>
-                    <h3 class="filterItem"><i class="fa-solid fa-fire"></i>Nos pépites</h3>
+                <div class="various">
+                    <button type="submit" class="filterItem" value="Economique"><i
+                            class="fa-solid fa-money-bill-wave"></i>
+                        <p class="valeur">Économiques</p>
+                    </button>
+                    <button type="submit" class="filterItem" value="Familial"><i class="fa-solid fa-person"></i>
+                        <p class="valeur">Familial</p>
+                    </button>
+                    <button type="submit" class="filterItem" value="Romantique"><i class="fa-solid fa-heart"></i>
+                        <p class="valeur">Romantique</p>
+                    </button>
+                    <button type="submit" class="filterItem" value="Nos pépites"><i class="fa-solid fa-fire"></i>
+                        <p class="valeur">Nos
+                            pépites</p>
+                    </button>
                 </div>
             </section>
             <section class="infos">

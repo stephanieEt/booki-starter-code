@@ -76,6 +76,19 @@ form {
   width: 100%;
   margin: 18px 0px;
   gap: 0;
+  padding: 20px;
+  height: 50px;
+}
+form .fa-solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 22px;
+  width: 50px;
+  background-color: var(--main-bg-color);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .search {
@@ -83,13 +96,13 @@ form {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
+  border: 1px solid var(--main-bg-color);
 }
 
 .search::placeholder {
   color: #000000;
 }
-
-button {
+form button {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: none;
@@ -109,30 +122,42 @@ button {
   flex-direction: row;
   gap: 15px;
 }
-.bouton {
+.various {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  flex: 1;
 }
 .filterItem {
-  padding: 10px 22px;
-  border-radius: 25px;
+  padding: 14px 28px;
+  border-radius: 30px;
   border: 2px solid #d9d9d9;
-  font-weight: bold;
-  font-size: 16px;
-  align-self: center;
   display: flex;
+  background-color: var(--main-bg-color);
+  height: 50px;
 }
+.valeur {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  margin: auto;
+}
+button i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
 .filter {
   font-weight: bold;
   font-size: 18px;
-  align-self: center;
+}
+.filter h3 {
+  margin-top: 12px;
 }
 
-.icon {
-  margin-right: 8px;
+.filterItem:hover {
+  background-color: var(--filter-bg-color);
 }
-
 /*1.5 infos*/
 
 .infos {
@@ -150,19 +175,11 @@ button {
   align-items: center;
 }
 
-.infoItem img {
-  max-width: 50%;
-  max-height: 50%;
-  margin-top: 6px;
-  margin-left: 1px;
+.infoItem i {
+  padding: 2px 0px 0px 2px;
 }
-
 .infos p {
   margin-top: 4px;
-}
-
-.filterItem:hover {
-  background-color: var(--filter-bg-color);
 }
 
 a {
@@ -449,7 +466,7 @@ footer a:hover {
   .filtered {
     flex-direction: column;
   }
-  .bouton {
+  .various {
     margin-left: 30px;
     flex-wrap: wrap;
   }
