@@ -44,7 +44,7 @@ header {
 
 .nav-container {
   display: flex;
-  gap: 50px;
+  gap: 68px;
 }
 
 .mouse:hover {
@@ -64,17 +64,17 @@ header {
   flex-direction: column;
 }
 .directionColumn h2 {
-  margin-bottom: 0;
+  margin-top: 35px;
+  margin-bottom: 0px;
 }
 .directionColumn p {
-  margin-top: 0;
+  margin-top: 8px;
 }
 /*1.3 barre de recherche*/
 form {
   display: flex;
   width: 100%;
-  margin: 13px 0px;
-  padding: 20px;
+  margin: 35px 0px;
   height: 50px;
 }
 form .fa-solid {
@@ -124,19 +124,20 @@ form button {
 .various {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
   flex-wrap: wrap;
 }
 .filterItem {
-  padding: 14px 28px;
-  border-radius: 30px;
+  padding: 4px 19px;
+  border-radius: 25px;
   border: 2px solid #d9d9d9;
   display: flex;
   background-color: var(--main-bg-color);
   height: 50px;
   font-weight: bold;
-  min-width: max-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .various button i {
@@ -162,7 +163,7 @@ form button {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 .infoItem {
@@ -180,7 +181,7 @@ form button {
 .infos p {
   margin-top: 4px;
 }
-
+/*CSS existant*/
 a {
   color: inherit;
   text-decoration: none;
@@ -230,6 +231,8 @@ a {
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
+  display: flex;
+  flex-direction: column;
 }
 .hebergements-cards {
   display: grid;
@@ -314,7 +317,7 @@ a {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   width: 100%;
-  height: 18vw;
+  height: 32vh;
 }
 .picture {
   width: 19vw;
@@ -486,6 +489,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .infos {
     margin-left: 20px;
   }
@@ -503,10 +507,12 @@ footer a:hover {
     margin: 0 20px 20px 20px;
     grid-gap: 0;
   }
-
+  .text {
+    margin-left: 9px;
+  }
   .activites-cards {
     flex-direction: column;
-    margin-right: 25px;
+    margin-left: 30px;
     gap: 70px;
   }
   .picture {
@@ -520,6 +526,7 @@ footer a:hover {
   .hebergements-and-populaires {
     flex-direction: column-reverse;
   }
+
   .populaires-cards {
     flex-direction: column;
     padding-left: 10px;
@@ -539,9 +546,10 @@ footer a:hover {
   .containerItem {
     flex-direction: column;
     margin-top: 65px;
+    gap: 50px;
   }
   .item {
-    gap: 10px;
+    gap: 15px;
   }
   .directionColumn.item {
     margin-top: 20px;
